@@ -1,0 +1,63 @@
+---
+title: "Non-planar slicer"
+description: "Project: Non-planar slicer algorithm"
+pubDate: "2023-09-27"
+heroImage: "/torquelink.PNG"
+import BaseLayout from "../layouts/BaseLayout.astro"
+---
+
+<BaseLayout title="Projects | Non-Planar Slicer" sideBarActiveItemID="project_slicer">
+
+  <div class="text-3xl font-bold mb-4">Non-Planar Slicing Method for Maximizing the Anisotropic Behavior of Continuous Fiber-Reinforced Fused Filament Fabricated Parts</div>
+
+  <div class="w-full" style="margin-top: 20px; text-align: justify;">
+    
+    <p>
+      Fused filament fabrication (FFF), a type of extrusion-based additive manufacturing method, has proven its suitability for 
+      the production of highly complex components without costly tooling. However, traditional FFF systems are restricted to planar 
+      layer deposition, which results in poor surface smoothness and a reduction in strength and stiffness along the layer-stacking 
+      direction. Recent advancements in the FFF process have made it possible to reinforce and strengthen the printed parts with continuous 
+      fibers, which significantly increases the material's anisotropy. Therefore, non-planar printing is necessary to optimize the anisotropic 
+      material behavior. 
+      
+      </br></br>
+      We developed a non-planar slicing method for optimizing the performance of continuous fiber-reinforced FFF parts 
+      printed using a 6-DOF industrial robot. The computational framework allows for the deposition of material on non-planar surfaces along the 
+      direction of the largest principal stress obtained from a finite element analysis following topology optimization.
+      The non-planar slicer consists of several stages, shown in the flowchart below,
+      which convert the input dataset into machine commands that can be sent to both the robot controller (KUKA KR4) 
+      and the custom extruder programmable logic controller (PLC).
+    <div class="w-full" style="margin-top: 20px;">
+    <div class="flex justify-between">
+      <img src="/nonplanarstructure.PNG" alt="Image 2"/>
+     </div>
+
+    </br></br>
+    Several functions, such as layer height, line width of plastic and composite extruder, fiber volume content (FVC), 
+    and degree of curvature of print layers, are integrated into the non-planar slicer. Users are able to adjust the 
+    parameters according to their preferences. Figure below shows one of the sliced layers of the torque link with different FVC. 
+    Blue, green, and red lines indicate the printing paths of the plastic nozzle, composite nozzle, and the support structure, respectively. 
+
+    <div class="w-full" style="margin-top: 20px;">
+    <div class="flex justify-between">
+      <img src="/fvc.PNG" alt="Image 2"/>
+     </div>
+
+<div class="w-full" style="margin-top: 20px; text-align: justify;">
+<p>Here is a video showing the summary of the research.</p>
+
+	  <div class="mb-6"></div>
+  
+  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: black;">
+  <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+          src="https://www.youtube.com/embed/EOoA9qnYdMo?si=zW2hU_LO6W3Z65EP"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+  </iframe>
+  </div>
+  <div class="mb-6"></div>
+
+
+<p> Main project collaborators: Leonard Freißmuth and Suat Mert Altug </p>
+</BaseLayout>

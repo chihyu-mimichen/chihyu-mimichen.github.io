@@ -1,78 +1,101 @@
 ---
+title: "index"
+description: "home and main page"
+pubDate: "2025-02-21"
+heroImage: "/itemPreview.png"
+
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
-import createSlug from "../lib/createSlug"
 
 const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 const last_posts = posts.slice(0, 3);
 ---
 
-<BaseLayout sideBarActiveItemID="home">
+<BaseLayout title="Chih-Yu Chen's Homepage" sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
-    <div class="text-xl py-1">Hey there 👋</div>
-    <div class="text-5xl font-bold">I'm Manuel Ernesto</div>
-    <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div>
+    <div class="text-5xl font-bold">Chih-Yu Chen</div>
+    <div class="text-3xl py-3 font-bold">Research Associate / Doctoral Candidate</div>
     <div class="py-2">
       <text class="text-lg">
-        This is <b>Astrofy</b> a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS.
-        Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed. I hope you find
-        it useful!
+        I am currently working as a research associate and pursuing my PhD at the Chair of Carbon Composites at the Technical University of Munich (TUM), 
+        specializing in developing the manufacturing process of continuous fiber non-planar 3D printing 
+        using KUKA robots. I'm also the founder of DASH, a student initiative at TUM dedicated to developing lower-limb 
+        exoskeletons for paraplegic patients. My skills include machine design, additive manufacturing, artificial intelligence, and finite element modeling.
       </text>
     </div>
     <div class="mt-8">
-      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
-      <a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
-        Get This template
-      </a>
+      <a href="https://www.linkedin.com/in/chih-yu-chen/" target="_blank" class="btn btn-outline"> Let's connect! </a>
+      <a href="https://orcid.org/0000-0002-6670-5682" target="_blank" class="btn btn-outline ml-5"> MY ORCID </a>
     </div>
   </div>
 
   <div>
-    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+    <div class="text-3xl w-full font-bold mb-2">My Projects</div>
   </div>
-
+  
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
+    title="Exoskeleton Research"
+    img="/exoresearch1.png"
+    desc="The research and development of exoskeletons can be divided into multiple topics. Several topics, including motion prediction, obstacle recognition, and human-exoskeleton interaction, have been studied."
+    url="/project_exoresearch"
   />
   <div class="divider my-0"></div>
+  
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="TUM DASH"
+    img="/stairs.2.png"
+    desc="Student team at the Technical University of Munich developing and building lower-limb exoskeletons for paraplegic patients."
+    url="/project_dash"
   />
   <div class="divider my-0"></div>
+  
   <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
+    title="Continuous Fiber Robotic 3D Printing"
+    img="/CF3DP2.PNG"
+    desc="Continuous fiber printhead intergrated on a robotic arm for printing small and complex carbon fiber reinforced structures."
+    url="/project_cf3dp"
   />
+  <div class="divider my-0"></div>
+  
+  <HorizontalCard
+    title="Slicer for Non-Planar 3D Printing"
+    img="/torquelink.PNG"
+    desc="A computational framework that allows for the deposition of material on non-planar surfaces along the direction of the largest principal stress obtained from a finite element analysis following topology optimization."
+    url="/project_slicer"
+  />
+  <div class="divider my-0"></div>
+  
+  <HorizontalCard
+    title="Transparency Control of 1-DoF Exoskeleton Knee Joint"
+    img="/Capture.PNG"
+    desc="A novel approach to transparency control based on a human-in-the-loop velocity optimization framework."
+    url="project_transparency"
+  />
+  <div class="divider my-0"></div>
+  
+  <HorizontalCard
+    title="Entrepreneurship Competitions"
+    img="/urbanaccess.png"
+    desc="Developing innovative solutions in MedTech and EdTech through global entrepreneurship competitions, tackling real-world challenges with scalable, impact-driven technology."
+    url="/project_entrecomp"
+  />
+  <div class="divider my-0"></div>
+  
+  <HorizontalCard
+    title="Finite Element Modeling of Extreme Shape Transformation"
+    img="/versatile1.PNG"
+    desc="Reversible shape transformation between 2D PDMS precursor design to 3D structure by buckling mechanism."
+    url="project_extremeshape"
+  />  
+  <div class="divider my-0"></div>
+  
+  <HorizontalCard
+    title="VEX Robotics Competition"
+    img="/vexclose.PNG"
+    desc="A remote controllable robot for collecting and dropping off bean-bag sacks into certain areas of the field to score points."
+    url="project_VEX"
+  />  
 
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
-  </div>
-
-  {
-    last_posts.map((post) => (
-      <>
-        <HorizontalCard
-          title={post.data.title}
-          img={post.data.heroImage}
-          desc={post.data.description}
-          url={"/blog/" + createSlug(post.data.title, post.slug)}
-          target="_self"
-          badge={post.data.badge}
-        />
-        <div class="divider my-0" />
-      </>
-    ))
-  }
 </BaseLayout>

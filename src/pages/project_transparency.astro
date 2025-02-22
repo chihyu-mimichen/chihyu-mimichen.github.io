@@ -1,0 +1,54 @@
+---
+title: "Transparency control"
+description: "Project: Transparency control"
+pubDate: "2023-09-27"
+heroImage: "/Capture.PNG"
+import BaseLayout from "../layouts/BaseLayout.astro"
+---
+
+<BaseLayout title="Projects | Transparency Control" sideBarActiveItemID="project_transparency">
+
+  <div class="text-3xl font-bold mb-4">Transparency Control of a 1-DoF Knee Exoskeleton via Human-in-the-Loop Velocity Optimization</div>
+
+  <div class="w-full" style="margin-top: 20px; text-align: justify;">
+    
+    <p>
+      Rehabilitative robotics, particularly lower-limb exoskeletons (LLEs), have gained increasing importance in aiding
+      patients regain ambulatory functions. One of the challenges in making these systems effective is the implementation of an assist-as-needed (AAN) 
+      control strategy that intervenes only when the patient deviates from the correct movement pattern. Equally
+      crucial is the need for the LLE to exhibit "transparency" - minimizing its interaction forces with the wearer to feel as
+      natural as possible. </br></br>
+      We introduce a novel approach to transparency control based on a human-in-the-loop velocity optimization framework. The proposed method employs torque
+      data captured from past steps through a Series Elastic Actuator (SEA) to approximate the wearer's intended future movements and computes a corresponding transparent velocity trajectory.
+      The velocity commands are complemented by an Adaptive Frequency Oscillator (AFO) based position controller that leverages the periodic nature of human gait and is modified with a force
+      sensor for increased reactiveness to human gait variations. This approach is experimentally evaluated against a standard zero-torque controller with a stationary single-degree-of-freedom 
+      knee exoskeleton test platform in a proof-of-concept study. Preliminary results indicate that combining adaptive oscillators with interaction force sensing can improve transparency 
+      compared to the conventional zero-torque controller, using force readings for position control and torque measurements for velocity optimization and control.
+      </br></br>
+      The diagram below shows the control framework that includes the AFO for the position computation and the velocity optimisation for the velocity computation.
+    <div class="w-full" style="margin-top: 20px;">
+    <div class="flex justify-between">
+      <img src="/blockdiagram.PNG" alt="Image 2"/>
+     </div>
+
+<div class="w-full" style="margin-top: 20px; text-align: justify;">
+<p>And here is a video showing the summary of the research.</p>
+
+  
+  <div class="mb-6"></div>
+  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: black;">
+  <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+          src="https://www.youtube.com/embed/4NxnhoP-zI4?si=dcajHSjYubqeTmcd"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+  </iframe>
+  </div>
+  <div class="mb-6"></div>
+
+<p> Project collaborators: Lukas Cha, Annika Guez, Sion Kim, Zhenhua Yu, Bo Xiao, and Ravi Vaidyanathan </p>
+</BaseLayout>
+
+
+
+

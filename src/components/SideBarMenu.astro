@@ -1,24 +1,51 @@
 ---
+title: "side bar menu"
+description: "side bar menu"
+pubDate: "2023-09-27"
+heroImage: "/itemPreview.png"
 const { sideBarActiveItemID } = Astro.props;
 const activeClass = "bg-base-300"; // For primary color replace with `active` class
 ---
 
 <ul class="menu grow shrink menu-md overflow-y-auto">
     <li><a class="py-3 text-base" id="home" href="/">Home</a></li>
-    <li><a class="py-3 text-base" id="projects" href="/projects">Projects</a></li>
-    <li><a class="py-3 text-base" id="services" href="/services">Services</a></li>
-    <li><a class="py-3 text-base" id="store" href="/store">Store</a></li>
-    <li><a class="py-3 text-base" id="blog" href="/blog/">Blog</a></li>
+    <li class="has-submenu">
+        <a class="py-3 text-base" id="projects" href="#">Projects</a>
+        <ul class="submenu">
+			<li><a class="py-3 text-base" href="/project_exoresearch">Exoskeleton Research</a></li>
+            <li><a class="py-3 text-base" href="/project_dash">TUM DASH</a></li>
+            <li><a class="py-3 text-base" href="/project_cf3dp">Continuous Fiber 3D Printing</a></li>
+            <li><a class="py-3 text-base" href="/project_slicer">Slicer for Non-Planar Printing</a></li>
+            <li><a class="py-3 text-base" href="/project_transparency">Transparency Control</a></li>
+			<li><a class="py-3 text-base" href="/project_entrecomp">Entrepreneurship Competitions</a></li>
+            <li><a class="py-3 text-base" href="/project_extremeshape">Extreme Shape Transformation</a></li>
+            <li><a class="py-3 text-base" href="/project_VEX">VEX Robotics Competition</a></li>
+        </ul>
+    </li>
     <li><a class="py-3 text-base" id="cv" href="/cv">CV</a></li>
     <li>
         <a
             class="py-3 text-base"
-            href="mailto:contact.manuelernestog@gmail.com"
+            href="mailto:chihyu.chen@tum.de"
             target="_blank"
             referrerpolicy="no-referrer-when-downgrade">Contact</a
         >
     </li>
 </ul>
+
+<style>
+.has-submenu .submenu {
+    display: none;
+}
+
+.has-submenu:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    margin-left: 10px; 
+}
+</style>
 
 <script define:vars={{ sideBarActiveItemID: sideBarActiveItemID, activeClass: activeClass }}>
 const activeItemElem = document.getElementById(sideBarActiveItemID);

@@ -1,18 +1,30 @@
 ---
+title: "Chih-Yu Chen CV"
+description: "My updated CV"
+pubDate: "2023-09-27"
+heroImage: "/profile.jpg"
 import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
 
 <BaseLayout title="Resume" sideBarActiveItemID="cv">
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Profile</div>
+    <div class="text-3xl w-full font-bold">Personal Information</div>
   </div>
 
   <div class="mb-10 text-justify">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  <div>
+    <strong>Address:</strong> Schleissheimer Str. 323, 80809 Munich, Germany
+  </div>
+  <div>
+    <strong>Mobile:</strong> (+49) 152 362 17050
+  </div>
+  <div>
+    <strong>Email:</strong> chihyu.chen@tum.de
+  </div>
+  <div class="mt-4">
+    <strong>Gender:</strong> Female | <strong>Date of birth:</strong> 31.07.1995 | <strong>Nationality:</strong> Taiwan
+  </div>
   </div>
 
   <div class="mb-5">
@@ -21,12 +33,16 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
   <div class="time-line-container grid gap-4 mb-10">
     <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+      title="Technical University of Munich (Munich, Germany)"
+      subtitle="Doctoral candidate at the Chair of Carbon Composites, since 2021"
     />
     <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+      title="Technical University of Dortmund (Dortmund, Germany)"
+      subtitle="Master of Science in Manufacturing Technology, 2018 - 2020"
+    />
+    <TimeLineElement
+      title="National Taiwan University (Taipei, Taiwan)"
+      subtitle="Bachelor of Science in Mechanical Engineering, 2013 - 2017"
     />
   </div>
 
@@ -35,58 +51,89 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   </div>
 
   <div class="time-line-container mb-10">
+
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="Research Associate, Chair of Carbon Composites, Technical University of Munich"
+      subtitle="2020.10 - present"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+    Integration of continuous fibers in extrusion-based additive manufacturing:<br />
+      <ul class="list-disc mx-10 mb-2 grid gap-2">
+        <li>Development of automated manufacturing processes for patient-specific assistive medical devices.</li>
+        <li>Research on non-planar 3D printing and its effects on anisotropy.</li>
+      </ul>
+    Research and development on rehabilitative lower-limb exoskeleton using assist-as-needed approach:<br />
+      <ul class="list-disc mx-10 mb-2 grid gap-2">
+        <li>Implementation of machine learning algorithms for motion prediction and real-time preception and decision.</li>
+        <li>Reinforcement Learning for adaptive control for optimizing exoskeleton-assisted walking.</li>
+		<li>Co-founded the DASH exoskeleton student team at TUM.</li>
+      </ul>
     </TimeLineElement>
+
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="Research Student, Department of Automotive and Aircraft Construction, HAW Hamburg"
+      subtitle="2019.11 - 2020.04"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+    Additively manufacturing of fuselage clips from short carbon fiber reinforced polymer:<br />
+      <ul class="list-disc mx-10 mb-2 grid gap-2">
+        <li>Collaboration with German Aerospace Center (DLR) and Ruhr University Bochum (RUB).</li>
+        <li>Research on the application of additively manufactured short carbon fiber reinforced polyamide to aircraft fuselage clips and the possibility to replace aluminum clips with additive manufacturing.</li>
+        <li>Experimental tests on strength parameters of a short carbon fiber reinforced polyamide.</li>
+      </ul>
     </TimeLineElement>
+
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="Student Assistant, Institute of Plastics Technology (LKT), TU Dortmund"
+      subtitle="2018.09 - 2020.09"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+    Evaluation of an innovative method for producing 3D carbon structures:<br />
+      <ul class="list-disc mx-10 mb-2 grid gap-2">
+        <li>Research on the innovative method to manufacture 3D carbon structures with the help of additive manufacturing, which has the potential application to improve the mechanical, electrical, and thermal properties of capacitors and structural batteries.</li>
+        <li>Manufacturing and optimization of different structures with additive manufacturing.</li>
+      </ul>
     </TimeLineElement>
+
+    <TimeLineElement
+      title="Student Assistant, Institute for Materials Technology (LWT), TU Dortmund"
+      subtitle="2018.09 - 2020.09"
+    >
+      Analysis of voids distribution in a brazed joint with X-ray microscopy:<br />
+      <ul class="list-disc mx-10 mb-2 grid gap-2">
+        <li>X-ray microscopic analysis of brazed component between steel 115CrV3 and cemented carbide K10.</li>
+        <li>Visualization and quantitative analysis of voids distribution within a brazed joint.</li>
+      </ul>
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Internship, Draco PCB Public Co., Ltd., Thailand"
+      subtitle="2014.07 - 2014.09"
+    >
+    Engineering and manufacturing department:<br />
+      <ul class="list-disc mx-10 mb-2 grid gap-2">
+        <li>Assistance in manufacturing of the single-sided, double-sided, and multilayer printed circuit boards and its use on automotive and telecom products.</li>
+        <li>Process engineering with computer aided manufacturing.</li>
+      </ul>
+    </TimeLineElement>
+
   </div>
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Certifications</div>
+    <div class="text-3xl w-full font-bold">Languages</div>
   </div>
 
   <ul class="list-disc mx-6 mb-10 grid gap-2">
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
+    <li><strong>English:</strong> advanced</li>
+    <li><strong>Mandarin:</strong> advanced</li>
+    <li><strong>German:</strong> intermediate</li>
   </ul>
 
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Skills</div>
   </div>
 
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li><strong>CAD:</strong> Solidworks, CATIA v5</li>
+    <li><strong>Programming:</strong> MATLAB, Python</li>
+    <li><strong>FEM:</strong> ANSYS Workbench</li>
+    <li><strong>Graphic design:</strong> Illustrator</li>
   </ul>
 </BaseLayout>

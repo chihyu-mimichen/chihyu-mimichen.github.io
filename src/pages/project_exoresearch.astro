@@ -1,0 +1,116 @@
+---
+title: "Exoskeleton Research"
+description: "Project: Exoskeleton Research"
+pubDate: "2025-02-21"
+heroImage: "/full_rendered1.png"
+import BaseLayout from "../layouts/BaseLayout.astro"
+---
+
+<BaseLayout title="Projects | Exoskeleton Research" sideBarActiveItemID="project_exoresearch">
+
+  <div class="text-3xl font-bold mb-4">Exoskeleton Research</div>
+  <div class="text-xl font-bold text-gray-700 mb-2">Obstacle Recognition for Lower-Limb Exoskeleton Control using Computer Vision and Deep Learning</div>
+
+  <div class="w-full" style="margin-top: 0px; text-align: justify;">
+    
+    <p>
+      In this project, we developed a computer vision and AI-based perception system for obstacle detection in lower-limb exoskeletons. 
+	  Using a combination of depth sensors, LiDAR, and machine learning (ML) algorithms, the research focuses on real-time object recognition to enhance exoskeleton-assisted mobility. 
+	  A key component is sensor fusion, which integrates multiple sensor inputs to improve detection accuracy and adaptability in various environments. 
+	  Additionally, Convolutional Neural Networks (CNNs) are used to process visual data, allowing the exoskeleton to recognize and classify obstacles, which contributes to 
+	  safer and more adaptive robotic-assisted movement. Experimental and test results show that the system is accurate and reliable in terms of obstacle detection and distance measurement, 
+	  demonstrating its potential for further development.
+      
+    <div class="w-full" style="margin-top: 20px;">
+    
+	<div class="flex justify-between">
+	  <figure style="width: 32%; text-align: center; margin-bottom: 5px;">
+		<img src="xin3.png" alt="Image 1" style="width: 100%; height: 300px; object-fit: cover; margin-bottom: 3px;" />
+		<figcaption style="font-size: 14px; color: gray; margin-top: 0px;">Fig 1: Task setup with disk-shaped stones.</figcaption>
+	  </figure>
+
+	  <figure style="width: 32%; text-align: center; margin-bottom: 5px;">
+		<img src="xin1.png" alt="Image 2" style="width: 100%; height: 300px; object-fit: cover; margin-bottom: 3px;" />
+		<figcaption style="font-size: 14px; color: gray; margin-top: 0px;">Fig 2: Detecting results of the final model using test set.</figcaption>
+	  </figure>
+
+	  <figure style="width: 32%; text-align: center; margin-bottom: 5px;">
+		<img src="xin2.png" alt="Image 3" style="width: 100%; height: 300px; object-fit: cover; margin-bottom: 3px;" />
+		<figcaption style="font-size: 14px; color: gray; margin-top: 0px;">Fig 3: Obstacle recognition with calculated step length.</figcaption>
+	  </figure>
+	</div>
+	
+	<div class="mb-6"></div>
+	
+	<div class="text-xl font-bold text-gray-700 mb-2">A Co-Simulation Approach of Multibody Dynamics of a Lower-Limb Exoskeleton</div>
+
+  <div class="w-full" style="margin-top: 20px; text-align: justify;">
+    <p>
+      This research focuses on co-simulation techniques that integrate multiple simulation models to create a more accurate and efficient digital representation 
+	  of complex physical systems. In order to have different simulation tools (e.g., finite element analysis, multibody dynamics, and control simulations) to exchange 
+	  data in real time, we explored how co-simulation can improve accuracy, computational efficiency, and predictive capabilities. 
+	  The research is particularly relevant for applications requiring dynamic, multi-domain interactions, where linking separate physics-based models enhances 
+	  system performance and real-time decision-making.
+    </p>
+  </div>
+  
+  <div class="mb-6"></div>
+  
+	<div class="flex justify-between items-stretch">
+	  <img src="korbi1.png" alt="Image 1" style="max-width: 49%; height: 350px; object-fit: cover;" />
+	  <img src="korbi2.png" alt="Image 2" style="max-width: 49%; height: 350px; object-fit: cover;" />
+	</div>
+
+    <div class="w-full" style="margin-top: 20px; text-align: justify;">
+    <p>
+      This study demonstrates that co-simulation can improve the reliability of predictive models while reducing computational costs, 
+	  making it a valuable approach for systems that require real-time responsiveness. However, challenges such as synchronization issues, data exchange latency, and computational resource demands, need to be addressed for more widespread adoption.
+    </p>
+  </div>
+ 
+  
+  <div class="mb-6"></div>
+    <div class="text-xl font-bold text-gray-700 mb-2">Enhancing Exoskeleton-Based Rehabilitation with Machine Learning and Sensor Optimization</div>
+
+  <div class="w-full" style="margin-top: 20px; text-align: justify;">
+    <p>
+       Restoring mobility for patients with neurological impairments requires precise motion prediction and adaptive control.
+	   ML integration is therefore essential for effective rehabilitative exoskeletons. 
+	   In this project, we explored ML and high-density EMG sensor optimization to enhance motion intent detection and real-time assistance, 
+	   which improves human-robot interaction (HRI) in rehabilitation. 
+	   We tackled two key challenges: accurate motion prediction for assistive control and optimized sensor placement for high-quality EMG signals, 
+	   both crucial for exoskeleton adaptability and effectiveness.
+	   
+	   </br></br>
+	   
+	   For real-time gait prediction and motion assistance, we investigated K-Means clustering to classify gait 
+	   phases and sequence-to-sequence neural networks for EMG signal mapping and domain adaptation. The model predicts 
+	   optimal knee angles to assist movement while minimizing metabolic cost. An assist-as-needed (AAN) approach was implemented to provide necessary 
+	   support while keeping patients engaged.
+	   
+	   </br></br>
+	   
+	   Since signal quality is crucial for accurate motion prediction, 
+	   electrode placement in high-density EMG acquisition plays a significant role. 
+	   Using Temporal Convolutional Networks (TCN), we evaluated optimal vs. standard electrode 
+	   locations based on consistency metrics (signal area, peak height, location repeatability). 
+	   Our findings indicate that electrode placement significantly affects model performance, and that 
+	   the optimal location varies across conditions.
+	<div class="w-full" style="margin-top: 20px;">
+    <div class="flex justify-between">
+      <img src="tcn.png" alt="Image 2" style="max-width: 100%; height: auto; object-fit: cover;" />
+    </div>
+    </p>
+  </div>
+  
+  
+  <div class="mb-6"></div>
+  <p> Project collaborators: Xin Li, Korbinian Rosenberger, and Annika Guez </p>
+
+
+
+</BaseLayout>
+
+
+
+

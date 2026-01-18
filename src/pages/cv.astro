@@ -23,7 +23,7 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
     <strong>Email:</strong> chihyu.chen@tum.de
   </div>
   <div class="mt-4">
-    <strong>Gender:</strong> Female | <strong>Date of birth:</strong> 31.07.1995 | <strong>Nationality:</strong> Taiwan
+    <strong>Gender:</strong> Female | <strong>Date of birth:</strong> 31.07.1995 | <strong>Nationality:</strong> Taiwan | <strong>Work authorization:</strong> German Blue Card
   </div>
   </div>
 
@@ -51,23 +51,39 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   </div>
 
   <div class="time-line-container mb-10">
+	<TimeLineElement
+	  title="Research Associate / Doctoral Candidate, Chair of Carbon Composites, Technical University of Munich"
+	  subtitle="2020.10 – present"
+	>
+	  Research projects in advanced manufacturing, robotics, and assistive systems:<br />
+	  <ul class="list-disc mx-10 mb-2 grid gap-2">
+		<li>Conducted research within the SMILE project, focusing on human-robot interaction and exoskeleton-related research.</li>
+		<li>Conducted research within the AutoKOOP project, developing an automated workflow for patient-specific carbon fiber reinforced orthopedic products.</li>
+		<li>Design and development of a modular continuous fiber 3D printing printhead with integration onto an industrial robotic system.</li>
+		<li>Investigation of non-planar continuous fiber additive manufacturing and its influence on mechanical performance and anisotropy.</li>
+		<li>Experimental material characterization and validation of additively manufactured composite structures.</li>
+	  </ul>
 
-    <TimeLineElement
-      title="Research Associate, Chair of Carbon Composites, Technical University of Munich"
-      subtitle="2020.10 - present"
-    >
-    Integration of continuous fibers in extrusion-based additive manufacturing:<br />
-      <ul class="list-disc mx-10 mb-2 grid gap-2">
-        <li>Development of automated manufacturing processes for patient-specific assistive medical devices.</li>
-        <li>Research on non-planar 3D printing and its effects on anisotropy.</li>
-      </ul>
-    Research and development on rehabilitative lower-limb exoskeleton using assist-as-needed approach:<br />
-      <ul class="list-disc mx-10 mb-2 grid gap-2">
-        <li>Implementation of machine learning algorithms for motion prediction and real-time preception and decision.</li>
-        <li>Reinforcement Learning for adaptive control for optimizing exoskeleton-assisted walking.</li>
-		<li>Co-founded the DASH exoskeleton student team at TUM.</li>
-      </ul>
-    </TimeLineElement>
+	  Teaching activities at the Chair of Carbon Composites:<br />
+	  <ul class="list-disc mx-10 mb-2 grid gap-2">
+		<li>Teaching and supervision in CAD using CATIA V5.</li>
+		<li>Teaching and supervision of laboratory courses and student projects in material characterization of composite materials.</li>
+	  </ul>
+	</TimeLineElement>
+	
+	<TimeLineElement
+	  title="Co-Founder and Project Lead, DASH – Lower-Limb Exoskeleton Student Initiative, Technical University of Munich"
+	  subtitle="2021.06 – 2022.09"
+	>
+	  Co-founding and technical development of a student-led exoskeleton initiative:<br />
+	  <ul class="list-disc mx-10 mb-2 grid gap-2">
+		<li>Co-founded DASH, a multidisciplinary student initiative focused on the development of lower-limb exoskeletons for paraplegic patients.</li>
+		<li>Contributed to the mechanical design, system integration, and prototyping of wearable robotic systems.</li>
+		<li>Supported the development of sensing, actuation, and human-machine interface concepts in close collaboration with control and embedded systems teams.</li>
+		<li>Coordinated technical development across subteams and supervised student projects and theses.</li>
+	  </ul>
+	</TimeLineElement>
+	
 
     <TimeLineElement
       title="Research Student, Department of Automotive and Aircraft Construction, HAW Hamburg"
@@ -124,6 +140,7 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
     <li><strong>English:</strong> advanced</li>
     <li><strong>Mandarin:</strong> advanced</li>
     <li><strong>German:</strong> intermediate</li>
+	<li><strong>Japanese:</strong> basic</li>
   </ul>
 
   <div class="mb-5">
@@ -133,7 +150,7 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   <ul class="list-disc mx-6 mb-10 grid gap-2">
     <li><strong>CAD:</strong> Solidworks, CATIA v5</li>
     <li><strong>Programming:</strong> MATLAB, Python</li>
-    <li><strong>FEM:</strong> ANSYS Workbench</li>
-    <li><strong>Graphic design:</strong> Illustrator</li>
+    <li><strong>Simulation:</strong> ANSYS Workbench</li>
+    <li><strong>Media and graphic design:</strong> Adobe Illustrator, Photoshop, Premiere Pro</li>
   </ul>
 </BaseLayout>

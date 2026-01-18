@@ -3,33 +3,50 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 ---
 
-<BaseLayout title="Projects | Continuous Fiber 3DP" sideBarActiveItemID="project_cf3dp">
+<BaseLayout title="Projects | Robot-Based Continuous Fiber Non-Planar 3D Printing" sideBarActiveItemID="project_cf3dp">
 
-  <div class="text-3xl font-bold mb-4">Continuous Fiber 3D Printing</div>
+  <div class="text-3xl font-bold mb-4">Robot-Based Continuous Fiber Non-Planar 3D Printing</div>
 
   <div class="w-full" style="margin-top: 20px; text-align: justify;">
     
-    <p>
-      In this project, we aim to advance state-of-the-art continuous fiber 3D printing (CF3DP) technology for automating the manufacturing of 
-      small and complex composite parts. Manufacturers often still rely primarily on traditional hand layup for these components. Such labor-intensive 
-      processes require trained technicians, expensive tooling, and a significant amount of time, all of which increase the overall manufacturing cost. 
-      While attempts have been made to automate the production of small composite parts through composite 3D printing (established companies include Markforged, 
-      Anisoprint, and 9TLabs), the properties rarely reach the quality that industrial users are accustomed to due to low fiber volume content (15-30%) and high void content. 
-      These factors can then lead to poor interlaminar bonding and decreased mechanical properties. Below is a photo showing continuous fiber printing using a robotic arm
-      intergrated with Anisoprint co-extrusion printhead.
-      </br></br>
-      <div class="flex justify-between">
-        <img src="/cf3dp3.PNG" alt="Image 2"/>
-      </div>
-      </br>
-      Another technique for automating composite manufacturing is automated fiber placement (AFP). This established manufacturing process is mainly 
-      employed to produce large carbon composite components, primarily for aerospace components. However, AFP has limitations, including the inability 
-      to steer fibers with steering radius less than 400 mm and to handle small radii of curvature. It is mainly used for producing large shell-like parts. 
-      We to combine the material properties of high-performance AFP continuous fiber materials and integrate them into desktop 3D printing. This integration 
-      aims to produce small, complex, and lightweight continuous carbon composite parts with superior strength and stiffness. This approach bridges the gap 
-      between existing additive manufacturing technology and the automated fiber placement of high-performance composites used in the industry.
-    <div class="w-full" style="margin-top: 20px;">
+	<p>
+	  In this project, I developed a multi-functional printhead integrated onto an
+	  industrial robotic arm. The printhead is capable of switching between thermoplastic extrusion, 
+	  heated compaction roller, and continuous carbon fiber 3D printing. The robotic integration
+	  allows non-planar printing and the fabrication of geometrically complex composite structures. 
+	  The photos below show the full functional setup of the system.
+	</p>
+	<div class="w-full" style="margin-top: 20px;">
+	
+	<div class="flex justify-between">
+	  <img
+		src="/finalprinthead.png"
+		alt="Robot-based continuous fiber additive manufacturing printhead integrated on an industrial robot"
+	  />
+	</div>
+	<div class="w-full" style="margin-top: 20px;">
+	
+	<p>
+	  The motivation for this work is that manufacturers of small and complex
+	  composite components still primarily rely on manual hand layup processes.
+	  These approaches are labor-intensive, require skilled technicians,
+	  expensive tooling, and long production times, which significantly increase
+	  manufacturing cost and limit scalability. Several companies have attempted to 
+	  automate the production of small composite parts using composite 3D printing, 
+	  including Markforged, Anisoprint, and 9TLabs.
+	  However, the achieved material properties often do not meet industrial
+	  requirements due to low fiber volume content and high void content.
+	  These limitations lead to poor interlaminar bonding and reduced mechanical
+	  performance.
+	</p>
+	<div class="w-full" style="margin-top: 20px;">
 
-<p style="font-style: italic;">This project is still ongoing, additional updates will be available in the near future!</p></br>
+	<p>
+	  These limitations motivated the development of a robotic continuous fiber
+	  additive manufacturing system with improved material quality and process
+	  control. The system was designed to increase fiber volume content, reduce void
+	  formation, and enable precise fiber placement and compaction.
+	</p>
+    <div class="w-full" style="margin-top: 20px;">
 
 </BaseLayout>
